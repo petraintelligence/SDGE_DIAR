@@ -13,6 +13,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        p {
+            margin: 2px;
+        }
+
         .page {
             page-break-after: always;
             position: relative;
@@ -63,10 +67,10 @@
             font-size: 11px;
             width: 8in;
             border-collapse: collapse;
+            margin: 0px;
         }
 
         tr {
-            padding: 2px;
             border: 1px solid black;
         }
 
@@ -78,6 +82,32 @@
         .firstcolumn {
             width: 1in;
             column-span: "1";
+        }
+
+        .note-section {
+            font-size: 13px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .redword {
+            color: red;
+        }
+
+        .bottomtable {
+            border: 2px solid black;
+            font-size: 11px;
+            width: 3in;
+            border-collapse: collapse;
+        }
+
+        .bottomtablerows {
+            border: none;
+        }
+
+        .bottomtabledata {
+            border: none;
+            padding: 4px;
         }
     </style>
 </head>
@@ -136,8 +166,7 @@
 
             <!--This is the Overhead/Underground Non Conformances section-->
             <div class="body-table">
-                Overhead/ Underground Non-Conformances:
-                <br>
+                <p>Overhead/ Underground Non-Conformances:</p>
                 <table class="table">
                     <tr>
                         <td class="firstcolumn">Select from list:</td>
@@ -149,10 +178,9 @@
             <br>
             <br>
             <br>
-            <!--This is the Note Section-->
+            <!--This is the Additional Information Section-->
             <div class="body-table">
-                Additional Information:
-                <br>
+                <p>Additional Information:</p>
                 <table class="table">
                     <tr>
                         <td>DIAR</td>
@@ -171,10 +199,35 @@
                     </tr>
                 </table>
             </div>
-
+            <br>
+            <br>
+            <!--This is the Note Section-->
+            <div class="note-section">
+                <p>
+                    <b>Note:</b> It is required that at least one <span class="redword">photo</span> be attached to the
+                    email
+                    after you click on <b>Submit by Email</b> button
+                </p>
+            </div>
+            <br>
+            <br>
             <!--This is the Reported by section-->
-            <div class="body-table">
-
+            <div class=" body-table">
+                <p>Reported by:</p>
+                <table class="bottomtable">
+                    <tr class="bottomtablerows">
+                        <td class="firstcolumn bottomtabledata">Name</td>
+                        <td class="bottomtabledata">Burns & McDonnell</td>
+                    </tr>
+                    <tr class="bottomtablerows">
+                        <td class='firstcolumn bottomtabledata'>Phone No.</td>
+                        <td class="bottomtabledata">+1 (858) 320-2920</td>
+                    </tr>
+                    <tr class="bottomtablerows">
+                        <td class="first column bottomtabledata">Date</td>
+                        <td class="bottomtabledata"> {currentdate}</td>
+                    </tr>
+                </table>
             </div>
 
         </div>
