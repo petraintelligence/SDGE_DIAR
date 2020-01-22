@@ -60,7 +60,7 @@
 
         .table {
             border: 2px solid black;
-            font-size: 12px;
+            font-size: 11px;
             width: 8in;
             border-collapse: collapse;
         }
@@ -71,7 +71,7 @@
         }
 
         td {
-            padding: 2px;
+            padding: 4px;
             border: 1px solid black;
         }
 
@@ -121,8 +121,17 @@
                         <td>X Y Coordinates</td>
                         <td>{coorddata}</td>
                     </tr>
+                    <tr>
+                        <td class="firstcolumn">Facility ID No</td>
+                        <td colspan="5">{facilityiddata}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Operating Condition Zone</td>
+                        <td colspan="4">{conditionzonedata}</td>
+                    </tr>
                 </table>
             </div>
+            <br>
             <br>
 
             <!--This is the Overhead/Underground Non Conformances section-->
@@ -130,13 +139,37 @@
                 Overhead/ Underground Non-Conformances:
                 <br>
                 <table class="table">
-
+                    <tr>
+                        <td class="firstcolumn">Select from list:</td>
+                        <td>{nonconformancedata}</td>
+                    </tr>
                 </table>
             </div>
-
+            <br>
+            <br>
+            <br>
+            <br>
             <!--This is the Note Section-->
             <div class="body-table">
-
+                Additional Information:
+                <br>
+                <table class="table">
+                    <tr>
+                        <td>DIAR</td>
+                    </tr>
+                    <tr>
+                        <td>{issuedescription}</td>
+                    </tr>
+                    <tr>
+                        <td>{polenumber}</td>
+                    </tr>
+                    <tr>
+                        <td>Pole Infraction {poleinfractiondata}</td>
+                    </tr>
+                    <tr>
+                        <td>Circuit ID: {circuitdata}</td>
+                    </tr>
+                </table>
             </div>
 
             <!--This is the Reported by section-->
