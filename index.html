@@ -86,6 +86,7 @@
         .firstcolumn {
             width: 1in;
             column-span: "1";
+            font-weight: bold;
         }
 
         .note-section {
@@ -140,8 +141,8 @@
                     <tr>
                         <td class="firstcolumn">CIP</td>
                         <td colspan="3">{cipdata}</td>
-                        <td>Date Identified</td>
-                        <td>{dateidentifieddata}</td>
+                        <td width=100px>Date Identified</td>
+                        <td width=150px>{dateidentifieddata}</tds>
                     </tr>
                     <tr>
                         <td class="firstcolumn">District</td>
@@ -150,7 +151,7 @@
                     <tr>
                         <td class="firstcolumn">Desc. Address</td>
                         <td>{addressdata}</td>
-                        <td>City</td>
+                        <td>City</td w>
                         <td>{citydata}</td>
                         <td>X Y Coordinates</td>
                         <td>{coorddata}</td>
@@ -160,7 +161,7 @@
                         <td colspan="5">{facilityiddata}</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Operating Condition Zone</td>
+                        <td colspan="2"><b>Operating Condition Zone</b></td>
                         <td colspan="4">{conditionzonedata}</td>
                     </tr>
                 </table>
